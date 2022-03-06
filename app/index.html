@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,10 @@
   <title>Digital Design</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
+
+  <a class="arrow-up" href="#"></a>
 
   <header class="header">
     <div class="container">
@@ -17,9 +21,532 @@
   </header>
 
   <main class="main">
-    <div class="container">
-      <h1>Gulp — Краткое руководство</h1>
-    </div>
+    <section class="overview">
+      <div class="container">
+        <div class="overview__inner">
+          <h2 class="overview__title title">
+            Gulp — Обзор
+          </h2>
+          <p class="overview__text text">
+            Gulp — это программа для выполнения задач, которая использует Node.js в качестве платформы. Gulp использует
+            только код JavaScript и помогает запускать внешние задачи и крупномасштабные веб-приложения. Он создает
+            системные автоматизированные задачи, такие как минимизация CSS и HTML, объединение библиотечных файлов и
+            компиляция файлов SASS. Эти задачи можно запустить с помощью сценариев Shell или Bash в командной строке.
+          </p>
+          <a class="link overview__link" href="https://gulpjs.com/">скачать Gulp</a>
+          <ul class="overview__list">
+            <h3 class="overview__subtitle subtitle">
+              Зачем использовать Gulp?
+            </h3>
+            <li class="overview__item item">
+              Это короче, проще и быстрее по сравнению с другими бегунами задач.
+            </li>
+            <li class="overview__item item">
+              Использует SASS и LESS в качестве CSS-препроцессора.
+            </li>
+            <li class="overview__item item">
+              Автоматически обновляет страницу после редактирования исходных файлов.
+            </li>
+            <li class="overview__item item">
+              Легко понять и создать Gulpfile.js, потому что он использует чистый код JavaScript для построения задачи.
+            </li>
+          </ul>
+          <h3 class="overview__subtitle subtitle">
+            история
+          </h3>
+          <p class="overview__text text">
+            На всю документацию Gulp распространяется лицензия CC0. Изначально Gulp v1.0.0 был выпущен 15 января 2015
+            года, а текущая версия Gulp v3.9.0 .
+          </p>
+          <h3 class="overview__subtitle subtitle">
+            Характеристики
+          </h3>
+          <ul class="overview__list">
+            <li class="overview__item item">
+              Обеспечивает минификацию и конкатенацию.
+            </li>
+            <li class="overview__item item">
+              Использует чистый код JavaScript.
+            </li>
+            <li class="overview__item item">
+              Преобразует LESS или SASS в компиляцию CSS.
+            </li>
+            <li class="overview__item item">
+              Управляет манипуляциями с файлами в памяти и повышает скорость с помощью платформы Node.js.
+            </li>
+          </ul>
+          <h3 class="overview__subtitle subtitle">
+            преимущества
+          </h3>
+          <ol class="overview__list">
+            <li class="overview__item item">
+              Огромное преимущество в скорости перед любым другим бегущим заданием
+            </li>
+            <li class="overview__item item">
+              Легко кодировать и понимать.
+            </li>
+            <li class="overview__item item">
+              Легко тестировать веб-приложения.
+            </li>
+            <li class="overview__item item">
+              Плагины просты в использовании и предназначены для одновременного выполнения одного действия.
+            </li>
+            <li class="overview__item item">
+              Многократно выполняет повторяющиеся задачи, такие как минимизация таблиц стилей, сжатие изображений и т.
+              Д.
+            </li>
+          </ol>
+          <h3 class="overview__subtitle subtitle">
+            Недостатки
+          </h3>
+          <ol class="overview__list">
+            <li class="overview__item item">
+              Больше количества зависимостей и является новичком по сравнению с Grunt.
+            </li>
+            <li class="overview__item item">
+              Используя плагины Gulp, вы не можете выполнять несколько задач.
+            </li>
+            <li class="overview__item item">
+              Конфигурация не так чиста, как Grunt.
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="installation">
+      <div class="container">
+        <div class="installation__inner">
+          <h2 class="installation__title title">
+            Gulp — Установка
+          </h2>
+          <p class="installation__text text">
+            Эта статья содержит пошаговую процедуру установки Gulp.
+          </p>
+          <h3 class="installation__subtitle subtitle">
+            Системные требования для Gulp
+          </h3>
+          <ul class="installation__list">
+            <li class="installation__item item">
+              <span class="installation__text bold">
+                Операционная система
+              </span>
+              — кроссплатформенная
+            </li>
+            <li class="installation__item item">
+              <span class="installation__text bold">
+                Поддержка браузера
+              </span>
+              — IE (Internet Explorer 8+), Firefox, Google Chrome, Safari, Opera
+            </li>
+          </ul>
+          <h3 class="installation__subtitle subtitle">
+            Установка Gulp
+          </h3>
+          <p class="installation__text text">
+            <span class="installation__text-bold bold">
+              Шаг 1
+            </span>
+            — Нам нужен Node.js для запуска примеров Gulp. Вы увидите экран, как показано ниже —
+          </p>
+          <a class="link installation__link--node" href="https://nodejs.org/en/">скачать Node.js</a>
+          <img class="installation__image" src="images/installation/1.jpg" alt="">
+          <p class="installation__text text">
+            Загрузите последнюю версию Zip-файла.
+          </p>
+          <p class="installation__text text">
+            <span class="installation__text-bold bold">
+              Шаг 2
+            </span>
+            — Затем запустите программу установки, чтобы установить NodeJ на ваш компьютер.
+          </p>
+          <p class="installation__text text">
+            <span class="installation__text-bold bold">
+              Шаг 3
+            </span>
+            — Вам необходимо установить переменные среды.
+          </p>
+          <ul class="installation__list">
+            <li class="installation__item item">
+              Щелкните правой кнопкой мыши на Мой компьютер.
+            </li>
+            <li class="installation__item item">
+              Выберите Свойства.
+            </li>
+            <li class="installation__item item">
+              Выберите вкладку «Дополнительно» и нажмите «Переменные среды».
+            </li>
+            <img class="installation__image" src="images/installation/2.jpg" alt="">
+            <li class="installation__item item">
+              В окне «Переменные среды» дважды щелкните ПУТЬ, как показано на следующем экране.
+            </li>
+            <img class="installation__image" src="images/installation/3.jpg" alt="">
+            <li class="installation__item item">
+              Вы получите окно редактирования пользовательской переменной, как показано на следующем снимке экрана.
+              Добавьте путь к папке Node.js в поле Значение переменной как C: \ Program Files \ nodejs \ node_modules \
+              npm. Если путь уже задан для других файлов, вам необходимо поставить точку с запятой (;) и добавить путь
+              Node.js, как показано на следующем снимке экрана.
+            </li>
+            <img class="installation__image" src="images/installation/4.jpg" alt="">
+            <p class="installation__text text">
+              В конце нажмите кнопку «ОК».
+            </p>
+            <p class="installation__text text bold">
+              Системная переменная
+            </p>
+            <li class="installation__item item">
+              В разделе «Системные переменные» дважды щелкните «Путь», как показано на следующем экране.
+            </li>
+            <img class="installation__image" src="images/installation/5.jpg" alt="">
+            <li class="installation__item item">
+              Вы получите окно редактирования системной переменной, как показано на следующем снимке экрана. Добавьте
+              путь к папке Node.js в поле «Значение переменной» как C: \ Program Files \ nodejs \ и нажмите «ОК», как
+              показано на следующем снимке экрана.
+            </li>
+            <img class="installation__image" src="images/installation/6.jpg" alt="">
+            <p class="installation__text text">
+              <span class="installation__text-bold bold">
+                Шаг 4
+              </span>
+              — Откройте командную строку в вашей системе и введите следующую команду. Он отобразит установленную версию
+              Node.js.
+            </p>
+            <p class="installation__text border text">
+              node -v
+            </p>
+            <img class="installation__image" src="images/installation/7.jpg" alt="">
+            <p class="installation__text text">
+              <span class="installation__text-bold bold">
+                Шаг 5
+              </span>
+              — В командной строке введите следующую команду, чтобы отобразить версию npm (менеджер пакетов Node.js),
+              которая используется для установки модулей. Он отобразит установленную версию Node.js.
+            </p>
+            <p class="installation__text border text">
+              node -v
+            </p>
+            <img class="installation__image" src="images/installation/8.jpg" alt="">
+            <p class="installation__text text">
+              <span class="installation__text-bold bold">
+                Шаг 6
+              </span>
+              — В командной строке введите следующую команду, чтобы установить Gulp. Добавление флага «-g» обеспечивает
+              глобальную доступность Gulp для любого проекта.
+            </p>
+            <p class="installation__text border text">
+              npm install gulp -g
+            </p>
+            <img class="installation__image" src="images/installation/9.jpg" alt="">
+            <p class="installation__text text">
+              <span class="installation__text-bold bold">
+                Шаг 7
+              </span>
+              — Чтобы убедиться, что Gulp был успешно установлен, введите следующую команду, чтобы отобразить версию
+              Gulp.
+            </p>
+            <p class="installation__text border text">
+              gulp -v
+            </p>
+            <img class="installation__image" src="images/installation/10.jpg" alt="Установка Gulp">
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="basics">
+      <div class="container">
+        <div class="basics__inner">
+          <h2 class="basics__title title">
+            Gulp — Основы
+          </h2>
+          <p class="basics__text text">
+            В этой главе вы познакомитесь с некоторыми основами, связанными с Gulp.
+          </p>
+          <h3 class="basics__subtitle subtitle">
+            Что такое система сборки?
+          </h3>
+          <p class="basics__text text">
+            Система сборки называется набором задач (вместе именуемых «исполнителями задач»), которые автоматизируют
+            повторяющуюся работу.
+          </p>
+          <ul class="basics__list">
+            <p class="basics__text text">
+              Ниже приведен список некоторых задач, которые можно выполнить с помощью системы сборки:
+            </p>
+            <li class="basics__item item">
+              Компиляция препроцесса CSS и JavaScript.
+            </li>
+            <li class="basics__item item">
+              Минификация файлов для уменьшения их размера.
+            </li>
+            <li class="basics__item item">
+              Объединение файлов в один.
+            </li>
+            <li class="basics__item item">
+              Запуск сервера для автоматической перезагрузки.
+            </li>
+            <li class="basics__item item">
+              Создание сборок развертывания для хранения полученных файлов в одном месте.
+            </li>
+          </ul>
+          <ul class="basics__list">
+            <p class="basics__text text">
+              В современном интерфейсном рабочем процессе система сборки работает с 3 компонентами:
+            </p>
+            <li class="basics__item item">
+              Менеджеры пакетов
+            </li>
+            <li class="basics__item item">
+              Препроцессоры
+            </li>
+            <li class="basics__item item">
+              Задачи и инструменты сборки
+            </li>
+          </ul>
+          <h3 class="basics__subtitle subtitle">
+            Менеджеры пакетов
+          </h3>
+          <p class="basics__text text">
+            Он используется для автоматизации установки обновления, удаления необходимых зависимостей, чистых библиотек
+            и пакетов, используемых в среде разработки. Примером для менеджеров пакетов являются
+            <span class="basics__text-bold bold">
+              bower
+            </span>
+            и
+            <span class="basics__text-bold bold">
+              npm
+            </span>.
+          </p>
+          <h3 class="basics__subtitle subtitle">
+            Препроцессоры
+          </h3>
+          <p class="basics__text text">
+            Препроцессоры очень полезны для эффективного современного рабочего процесса, добавляя оптимизированный
+            синтаксис и дополнительные функции, которые компилируются в его родной язык.
+          </p>
+          <ol class="basics__list">
+            <p class="basics__text text">
+              Некоторые из популярных препроцессоров —
+            </p>
+            <li class="basics__item item">
+              <span class="basics__text-bold bold">
+                CSS
+              </span>
+              — SASS, LESS и Stylus.
+            </li>
+            <li class="basics__item item">
+              <span class="basics__text-bold bold">
+                JS
+              </span>
+              — CoffeeScript, LiveScript, TypeScript и т. Д.
+            </li>
+            <li class="basics__item item">
+              <span class="basics__text-bold bold">
+                HTML
+              </span>
+              — Markdown, HAML, Slim, Jade и т. Д.
+            </li>
+          </ol>
+          <h3 class="basics__subtitle subtitle">
+            Задачи Gulp
+          </h3>
+          <p class="basics__text text">
+            Исполнители задач автоматизируют задачи, такие как преобразование SASS в CSS, минимизируют файлы,
+            оптимизируют изображения и многие другие задачи, используемые в рабочем процессе разработки. Gulp является
+            одним из тех, кто выполняет задачи в современной рабочей среде, и работает на Node.
+          </p>
+          <h3 class="basics__subtitle subtitle">
+            Настройка вашего проекта
+          </h3>
+          <ul class="basics__list">
+            <p class="basics__text text">
+              Чтобы установить свой проект на своем компьютере, создайте папку под названием «работа», например. Рабочая
+              папка содержит следующие подпапки и файлы —
+            </p>
+            <li class="basics__item item">
+              <span class="basics__text-bold bold">
+                Src
+              </span>
+              — Местоположение предварительно обработанных исходных файлов и папок HTML.
+              <ol class="basics__list">
+                <li class="basics__item item">
+                  <span class="basics__text-bold bold">
+                    Изображения
+                  </span>
+                  — Содержит изображения без сжатия.
+                </li>
+                <li class="basics__item item">
+                  <span class="basics__text-bold bold">
+                    Сценарии
+                  </span>
+                  — содержит несколько предварительно обработанных файлов сценариев.
+                </li>
+                <li class="basics__item item">
+                  <span class="basics__text-bold bold">
+                    Стили
+                  </span>
+                  — содержит несколько предварительно обработанных файлов CSS.
+                </li>
+              </ol>
+            </li>
+            <li class="basics__item item">
+              <span class="basics__text-bold bold">
+                Построить
+              </span>
+              — эта папка будет создана автоматически, которая содержит производственные файлы.
+              <ol class="basics__list">
+                <li class="basics__item item">
+                  <span class="basics__text-bold bold">
+                    Изображения
+                  </span>
+                  — содержит сжатые изображения.
+                </li>
+                <li class="basics__item item">
+                  <span class="basics__text-bold bold">
+                    Сценарии
+                  </span>
+                  — один файл сценария, содержащий минимизированные коды.
+                </li>
+                <li class="basics__item item">
+                  <span class="basics__text-bold bold">
+                    Стили
+                  </span>
+                  — Отдельный файл CSS, содержащий минимизированные коды.
+                </li>
+              </ol>
+            </li>
+            <li class="basics__item item">
+              <span class="basics__text-bold bold">
+                gulpfile.js
+              </span>
+              —— это файл конфигурации, который используется для определения наших задач.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="app">
+      <div class="container">
+        <div class="app__inner">
+          <h2 class="app__title title">
+            Gulp — Разработка приложения
+          </h2>
+          <ul class="app__list">
+            <p class="app__text text">
+              В этой главе мы рассмотрим основы разработки приложения, которые включают в себя следующее:
+            </p>
+            <li class="app__item item">
+              Объявление необходимых зависимостей
+            </li>
+            <li class="app__item item">
+              Создание задачи для зависимостей
+            </li>
+            <li class="app__item item">
+              Выполнение задачи
+            </li>
+            <li class="app__item item">
+              Смотря задачу
+            </li>
+          </ul>
+          <h3 class="app__subtitle subtitle">
+            Декларация зависимостей
+          </h3>
+          <p class="app__text text">
+            При установке плагинов для приложения необходимо указать зависимости для плагинов. Зависимости
+            обрабатываются менеджером пакетов, таким как bower и npm.
+          </p>
+          <p class="app__text text">
+            Давайте возьмем один плагин под названием
+            <span class="app__text-bold bold">
+              gulp-imagemin
+            </span>
+            для определения зависимостей для него в файле
+            конфигурации. Этот плагин может быть использован для сжатия файла изображения и может быть установлен с
+            помощью следующей командной строки —
+          </p>
+          <p class="app__text border text">
+            npm install gulp-imagemin --save-dev
+          </p>
+          <p class="app__text text">
+            Вы можете добавить зависимости в файл конфигурации, как показано в следующем коде.
+          </p>
+          <p class="app__text border text">
+            var imagemin = require('gulp-imagemin');
+          </p>
+          <p class="app__text text">
+            Вышеупомянутая строка включает в себя плагин, и он включен как объект с именем
+            <span class="app__text-bold bold">
+              imagemin
+            </span>.
+          </p>
+          <h3 class="app__subtitle subtitle">
+            Создание задачи для зависимостей
+          </h3>
+          <p class="app__text text">
+            Задача позволяет использовать модульный подход для настройки Gulp. Нам нужно создать задачу для каждой
+            зависимости, которую мы добавим, когда найдем и установим другие плагины. Задача Gulp будет иметь следующую
+            структуру —
+          </p>
+          <p class="app__text border text">
+            gulp.task('task-name', function() {<br>
+            //do stuff here<br>
+            });
+          </p>
+          <p class="app__text text">
+            Где ‘task-name’ — это имя строки, а ‘function ()’ выполняет вашу задачу. «Gulp.task» регистрирует функцию
+            как задачу в имени и определяет зависимости от других задач.
+          </p>
+          <p class="app__text text">
+            Вы можете создать задачу для определенной выше зависимости, как показано в следующем коде.
+          </p>
+          <p class="app__text border text">
+            gulp.task('imagemin', function() {<br>
+            var img_src = 'src/images/**/*', img_dest = 'build/images';<br>
+            <br>
+            gulp.src(img_src)<br>
+            .pipe(changed(img_dest))<br>
+            .pipe(imagemin())<br>
+            .pipe(gulp.dest(img_dest));<br>
+            });
+          </p>
+          <p class="app__text text">
+            Изображения находятся в
+            <span class="app__text-bold bold">
+              src / images / ** / *
+            </span>,
+            который сохраняется в img_srcobject. Он передается другой
+            функции, созданной конструктором imagemin. Он сжимает изображения из папки src и копирует их в папку сборки,
+            вызывая метод
+            <span class="app__text-bold bold">
+              dest
+            </span>
+            с аргументом, который представляет целевой каталог.
+          </p>
+          <h3 class="app__subtitle subtitle">
+            Выполнение задачи
+          </h3>
+          <p class="app__text text">
+            Файл Gulp настроен и готов к выполнению. Используйте следующую команду в каталоге вашего проекта для запуска
+            задачи:
+          </p>
+          <p class="app__text border text">
+            gulp imagemin
+          </p>
+          <p class="app__text text">
+            Запустив задачу с помощью приведенной выше команды, вы увидите следующий результат в командной строке:
+          </p>
+          <p class="app__text border text">
+            C:\work>gulp imagemin <br>
+            [16:59:09] Using gulpfile C:\work\gulpfile.js<br>
+            [16:59:09] Starting 'imagemin'...<br>
+            [16:59:09] Finished 'imagemin' after 19 ms<br>
+            [16:59:09] gulp-imagemin: Minified 2 images (saved 80.81 kB - 16.9%)<br>
+          </p>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <foter class="footer">
@@ -30,4 +557,5 @@
 
   <script src="js/main.min.js"></script>
 </body>
+
 </html>

@@ -6,6 +6,10 @@ body {
 body {
   display: flex;
   flex-direction: column;
+  line-height: 1.4;
+  font-size: 18px;
+  font-weight: 400;
+  color: #2A2F35;
 }
 
 main {
@@ -16,4 +20,65 @@ main {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.title,
+.subtitle {
+  margin-bottom: 15px;
+}
+
+.title {
+  font-size: 36px;
+}
+
+.subtitle {
+  font-size: 24px;
+}
+
+.item {
+  margin-left: 40px;
+
+  &:last-child {
+    margin-bottom: 30px;
+  }
+}
+
+.text {
+  margin-bottom: 30px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.border {
+  display: block;
+  padding: 10px 10px 10px 45px;
+  font-size: 16px;
+  color: #333;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.link {
+  display: inline-block;
+  padding: 9px 20px;
+  color: #2A2F35;
+  border: 1px solid #2A2F35;
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px black;
+  transition: ease .3s;
+
+  &:hover {
+    background: #cf4647;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: #fff;
+    box-shadow: 0px 0px 25px #cf4647;
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
 }
